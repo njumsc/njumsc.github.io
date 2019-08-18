@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-
+{% if page.jump-url %}
+<meta id="jump" http-equiv="refresh" content="0;url={{ page.jump-url }}"></meta> 
+{% endif %}
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
@@ -34,7 +36,6 @@ layout: default
                         {% endfor %}
                     </div>
                     <h1>{{ page.title }}</h1>
-					<h2>{% if page.jump-url %}{{ page.jump-url }}{% endif %}</h2>
                     {% comment %}
                         always create a h2 for keeping the margin , Hux
                     {% endcomment %}
