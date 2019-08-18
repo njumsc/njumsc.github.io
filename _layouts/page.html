@@ -100,7 +100,7 @@ layout: default
 
                 <!-- Short About -->
                 <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT US</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
                             <a href="{{ site.baseurl }}/about">
@@ -179,6 +179,16 @@ layout: default
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+							{% if site.bilibili_username %}
+                            <li>
+                                <a target="_blank" href="https://space.bilibili.com/{{ site.bilibili_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i href="https://user-images.githubusercontent.com/20344258/50698395-cac04500-107f-11e9-89df-a4b52eff7586.png"></i>
                                     </span>
                                 </a>
                             </li>
