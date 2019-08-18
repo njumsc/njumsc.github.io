@@ -7,7 +7,7 @@ author:     LGT
 header-img: img/post-bg1.png
 catalog: true
 tags:
-    - blog
+    - Blog
     - 零基础
     - 教程
 ---
