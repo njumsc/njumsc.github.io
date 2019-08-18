@@ -3,7 +3,7 @@ layout: default
 ---
 {% if page.jump-url %}
 <meta id="jump" http-equiv="refresh" content="0;url={{ page.jump-url }}"></meta> 
-{% endif %}
+{% else %}
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
@@ -227,4 +227,5 @@ layout: default
         }
     }
 </style>
+{% endif %}
 {% endif %}
