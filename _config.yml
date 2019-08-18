@@ -67,7 +67,7 @@ gitalk:
    repo: njumsc.github.io    #仓库名称
    owner: youngstudent2    #github用户名
    admin: youngstudent2
-   distractionFreeMode: true #是否启用类似FB的阴影遮罩
+   distractionFreeMode: false #是否启用类似FB的阴影遮罩
 
 
 # 统计
