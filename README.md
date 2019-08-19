@@ -87,12 +87,12 @@ authors:  # your site author
 
 ```yaml
 authors:  # your site author
-	- name: XXX   # your name 
-	  github: XXXX # your github id
-	  brief-intro: XXXX #个人简介 
-	- name: 张三   # your name 
-	  github: ZHANG SAN # your github id
-	  brief-intro: 我，张三，一个么得感情的男人 #个人简介 
+    - name: XXX   # your name 
+      github: XXXX # your github id
+      brief-intro: XXXX #个人简介 
+    - name: 张三   # your name 
+      github: ZHANG SAN # your github id
+      brief-intro: 我，张三，一个么得感情的男人 #个人简介 
 ```
 
 
