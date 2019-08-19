@@ -30,7 +30,7 @@ header-img: "img/tag-bg.jpg"
 				{% endfor %}
 			</div>
 
-			
+			<h2>{paginator.}</h2>
 			{% for author in site.authors %}
 				
 				<div class="one-tag-list">
@@ -38,7 +38,7 @@ header-img: "img/tag-bg.jpg"
 						<span class="tag-text">{{ author }}</span>
 					</span>
 					{% for post in paginator.posts %}
-					
+					{% if post.author == author %}
 				  <!-- <li class="listing-item">
 				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
 				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
@@ -53,7 +53,7 @@ header-img: "img/tag-bg.jpg"
 							<!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
 						</div>
 					<hr>
-					{% if post.author == author %}
+					
 					{% endif %}
 					{% endfor %}
 				</div>
