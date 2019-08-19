@@ -33,15 +33,14 @@ header-img: "img/tag-bg.jpg"
 			{% for author in site.authors %}
 				
 				<div class="one-tag-list">
-					<span class="fa fa-tag listing-seperator" id="{{ author }}">
-						<span class="tag-text">{{ author }}</span>
+					<span class="fa fa-tag listing-seperator" id="{{ author.name }}">
+						<a href="http://github.com/{{ author.github }}">
+						<span class="tag-text">{{ author.name }}</span>
 					</span>
+					<text>{{ author.brief-intro }}</text>
 					{% for post in site.posts %}
-					{% if post.author == author %}
-				  <!-- <li class="listing-item">
-				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-				  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-				  </li> -->
+					{% if post.author == author.name %}
+				
 						<div class="post-preview">
 							<a href="{% if post.jump-url %}{{ post.jump-url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
 							<h2 class="post-title">{{ post.title }}</h2>
