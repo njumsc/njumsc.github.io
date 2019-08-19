@@ -5,11 +5,10 @@ description: "Thinking will not overcome fear but action will."
 
 {% for post in paginator.posts %}
 <div class="post-preview">
-	{% if post.jump-url %}
-	<a href="{{	post.jump-url }}">
-	{% else %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	{% endif %}
+	
+	<a href="{% if post.jump-url %}{{ post.jump-url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">
+	
+	
         <h2 class="post-title">
             {{ post.title }}
         </h2>
