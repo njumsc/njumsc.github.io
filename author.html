@@ -30,14 +30,13 @@ header-img: "img/tag-bg.jpg"
 				{% endfor %}
 			</div>
 
-			<h2>{{ paginator.total_posts }}</h2>
 			{% for author in site.authors %}
 				
 				<div class="one-tag-list">
 					<span class="fa fa-tag listing-seperator" id="{{ author }}">
 						<span class="tag-text">{{ author }}</span>
 					</span>
-					{% for post in paginator.posts %}
+					{% for post in site.posts %}
 					{% if post.author == author %}
 				  <!-- <li class="listing-item">
 				  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
