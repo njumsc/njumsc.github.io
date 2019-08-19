@@ -30,7 +30,7 @@ header-img: "img/tag-bg.jpg"
 				{% endfor %}
 			</div>
 
-			<h2>{paginator.total_posts}</h2>
+			<h2>{{ paginator.total_posts }}</h2>
 			{% for author in site.authors %}
 				
 				<div class="one-tag-list">
