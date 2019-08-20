@@ -8,13 +8,18 @@
 
 ### 快速开始
 
-#### 把文件clone到本地
+以下有两种方法：
 
-在Github Desktop打开这个项目
+#### 第一种：直接在网页上编辑博客
+
+打开仓库地址https://github.com/njumsc/njumsc.github.io/tree/master/_posts 进入到_posts文件夹，点击create new file,创建你的.md文档。
+
+#### 第二种：把仓库clone到本地后，新建一篇文章
+
+将本项目fork到你的仓库，然后在Github Desktop打开在**你的仓库**中的这个项目
 
 ![QQ截图20190819181357.png](https://i.loli.net/2019/08/19/f6H7cnsDtvRE49Y.png)
 
-#### 新建一篇文章
 
 ![QQ截图20190819182157.png](https://i.loli.net/2019/08/19/36ODMfFIePwU5bH.png)
 
@@ -44,17 +49,27 @@
 
 将头信息填完后，就可以开始你的文章创作啦！
 
+#### 图片问题：
+由于md格式的限制，目前在文章中要插入图片有两种途径：
+1. 用图床（一个帮你存图并分给你这个图的公网url的地方），那就插入图片url.(推荐的图床: 免费的sm.ms,阿里的半年五块钱)
+2. 先上传图片到img文件夹，再从github中获取到这些图片的url,再插入你的.md文件
+**img文件夹请尽量存缩略图，并且以Author-时间进行命名，存大量图片会导致clone速度极慢，msc的博客大家一起维护~**
+
 #### 发布你的文章
+
+##### 如果是在网页直接编辑
+编辑完成后，在页面的最下方找到Propose file change的绿色button,点击后页面跳转，继续点击create new pull request,可以留下comment也可以不留，再次点击create new pull request确认即可
+
+##### 如果是本地编辑
 
 ![QQ截图20190819190356.png](https://i.loli.net/2019/08/19/SweP9O2X3chIC1a.png)
 
-文章写好以后打开Github Desktop，点击左下角的commit，更改就保存到了本地，然后点击上方的push（commit之后会变为push），就可以把你的文章发布出去了
+文章写好以后打开Github Desktop，点击左下角的commit，更改就保存到了本地，然后点击上方的push（commit之后会变为push），就可以把你的文章发布在你的仓库里了。然后点击Branch -> create pull request,点击create new pull request绿色按钮,可以留下comment也可以不留，再次点击create new pull request确认即可。
+然后等待仓库管理员确认你的pull request之后，访问[njumsc](http://njumsc.github.io)，就可以看到你刚发布的文章啦！
+（如果看不见，可按ctrl+r 强制刷新)
 
-然后访问[njumsc](http://njumsc.github.io)，就可以看到你刚发布的文章啦！
 
-
-
-#### ==或者你也可以在github上编辑文章，可以参考[这里](https://njumsc.github.io/2017/02/06/快速搭建个人博客/#写文章)==
+#### 也可参考[这里]，查看如何在web页面编辑后，发表文章(https://njumsc.github.io/2017/02/06/快速搭建个人博客/#写文章)==
 
 ### Tips：如何转载其他网站上的文章
 
